@@ -22,7 +22,8 @@ Save Theme.Liquid
 
 
 The final Step to add all the Options for the Announcement Bar:
-Go to Sections, and create a new Section by Clicking on "Add a new Section"
+
+    Go to Sections, and create a new Section by Clicking on "Add a new Section"
 
 Name the new Section:
 
