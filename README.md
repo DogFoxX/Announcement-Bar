@@ -38,7 +38,7 @@ Now copy the code from Announcement Bar Code file, paste in your announcement-ba
 
 Now go to your Theme again, and click on Customize.
 If everything was done right, you should see Announcement Bar at the very top of your Theme Settings.
-Here you can customize at your will.
+Here you can customize at your will. All text field accept HTML syntax.
 
 # Settings
 ## Behviour
@@ -49,14 +49,14 @@ Here you can customize at your will.
 
 ## Free Shipping Announcement
 
-###### Free Shipping Threshold
+**Free Shipping Threshold**
 Set the Free Shipping Threshold (only numbers, no currency Symbols).
 The Threshold is the amount a customer has to spend in order to get Free Shipping.
 
-##### Qualified Text
+**Qualified Text**
 This is the Message a customer sees when the amount in their cart is equal to, or larger than the Threshold.
 
-##### Not Qualified Text
+**Not Qualified Text**
 Set your Not Qualified Message, and add [price] (with square brackets) wherever you want.
 This message will tell the customer how much more to spend in order to get Free Shipping.
 eg.
