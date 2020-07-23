@@ -43,15 +43,17 @@ Here you can customize at your will. All text field accept HTML syntax.
 # Settings
 ## Behviour
 
+
+
 ## Close Button
 
-
+**Enable**
 
 ## Free Shipping Announcement
 
 **Free Shipping Threshold**
 
-Set the Free Shipping Threshold (only numbers, no currency Symbols).
+Use only numbers here, no currency Symbols.
 The Threshold is the amount a customer has to spend in order to get Free Shipping.
 
 **Qualified Text**
@@ -69,4 +71,4 @@ Example:
 
 Output, eg
 
-    Spend $40.00 more to get Free Shipping
+    Spend $40.00 more to get Free Shipping.
