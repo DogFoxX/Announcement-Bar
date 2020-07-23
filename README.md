@@ -35,8 +35,9 @@ Here you can customize at your will.
 
 I've also included a Free Shipping Counter, which needs to be enabled in the part of the Announcement you want it to be visible.
   
-    • Set the Free Shipping Threshold (only numbers, no currency Symbols). The Threshold is the amount a customer has to spend in order to get Free Shipping.
+    • Set the Free Shipping Threshold (only numbers, no currency Symbols).
+        The Threshold is the amount a customer has to spend in order to get Free Shipping.
     • Set your Qualified Message. This is the Text a Customer sees when the Threshold is met
     • Set your Not Qualified Message, and add [price] (with square brackets) wherever you want.
-    This message will tell the customer how much more to spend in order to get Free Shipping.
-    eg. Spend [price] more to get Free Shipping. The output will be, eg: Spend $40.00 more to get Free Shipping
+        This message will tell the customer how much more to spend in order to get Free Shipping.
+        eg. Spend [price] more to get Free Shipping. The output will be, eg: Spend $40.00 more to get Free Shipping
