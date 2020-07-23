@@ -59,7 +59,8 @@ This is the Message a customer sees when the amount in their cart is equal to, o
 **Not Qualified Text**
 Set your Not Qualified Message, and add [price] (with square brackets) wherever you want.
 This message will tell the customer how much more to spend in order to get Free Shipping.
-eg.
+
+Example:
 
     Spend [price] more to get Free Shipping.
 
