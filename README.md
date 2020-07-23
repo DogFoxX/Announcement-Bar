@@ -43,11 +43,67 @@ Here you can customize at your will. All text field accept HTML syntax.
 # Settings
 ## Behviour
 
+**Show Announcement**
 
+This will disbale or enable the entire Announcement
+
+**Show again after close**
+
+Enabled State:
+
+    When a cutomer or visitor closes the bar, it will be closed until the page is refreshed, or when navigating to another page.
+    
+Disabled State:
+    
+    When a cutomer or visitor closes the bar, it will be closed for the whole session and won't be displayed again.
+    It will only be visible again when a new session is activated.
+    For instance, when a visitor closes your webpage the session is closed.
+    A neew session will start when a visitor opens your website from fresh.
+    
+**Text Alignment**
+
+This sets all the text to either **Left, Right or Center**
+
+**Background Colour**
+
+This will set the colour of the Bar Background
 
 ## Close Button
 
 **Enable**
+
+Disabled State:
+
+    A close button will not be visible
+    
+Enabled State:
+
+    A close button will be visible and accessible
+    
+**Button Colour**
+
+This sets the colour of the **X**
+
+**Button Background Colour**
+
+This sets the colour of the close button's background
+
+**Background Colour on Hover**
+
+This sets the colour when mouse hovers over the close button
+
+**Corner Radius**
+
+Setting this to 0 will make the close the button square with sharp corners
+Use the slider to set the corner "roundness"
+
+**X Width**
+
+Use the slider to adjust the size of the **X**
+
+**Background Width** and **Background Height**
+
+Use the sliders to adjust the size of the close button background
 
 ## Free Shipping Announcement
 
