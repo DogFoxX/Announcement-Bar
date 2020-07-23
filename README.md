@@ -32,7 +32,7 @@ Name the new Section:
 
 
 Remove any generated code from the file, and Save the file.
-Now copy the code from Announcement Bar Code file, paste in your announcement-bar.Liquid file, and Save.
+Now copy the code from [Announcement Bar Code file](announcement-bar.liquid), paste in your announcement-bar.Liquid file, and Save.
 
 # Using the new Announcement Bar
 
