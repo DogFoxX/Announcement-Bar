@@ -40,8 +40,10 @@ Now go to your Theme again, and click on Customize.
 If everything was done right, you should see Announcement Bar at the very top of your Theme Settings.
 Here you can customize at your will.
 
-## Settings
+# Settings
 ## Behviour
+
+## Close Button
 
 
 
