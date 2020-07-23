@@ -153,13 +153,24 @@ Disabled State:
     
 **Custom HTML**
 
-This is the field where you type your announcement message. Accepts HTML syntax
+This is the field where you type your announcement message. Accepts HTML syntax.
 
 Example:
 
-    This is our <br><strong>Announcement</strong>
-    
-Output:
+    This is our <br><strong>Announcement</strong>.
 
-    This is our
-    **Announcement**
+**Text Colour**
+
+Sets the colour for the text :)
+
+**Text Size**
+
+This will set the text size when viewed in desktop version of your website.
+
+**Mobile Text Size**
+
+This will set the text size when viewd in mobile version of your website.
+
+**Text Weight**
+
+This will set the weight (thickness) of your text.
