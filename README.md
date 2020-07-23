@@ -135,7 +135,8 @@ Output, eg
 
 Enabled State:
 
-    This is where your Free Shipping will be displayed.
+    This is where your Free Shipping Counter will be displayed.
+    Free Shipping Threshold will also be used here.
     Type a message in the Custom HTML field.
     
 Message example:
