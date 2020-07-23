@@ -38,14 +38,14 @@ Now copy the code from Announcement Bar Code file, paste in your announcement-ba
 
 Now go to your Theme again, and click on Customize.
 If everything was done right, you should see Announcement Bar at the very top of your Theme Settings.
-Here you can customize at your will. All text field accept HTML syntax.
+Here you can customize at your will. All text fields accept HTML syntax.
 
 # Settings
 ## Behviour
 
 **Show Announcement**
 
-This will disbale or enable the entire Announcement
+This will disbale or enable the entire Announcement.
 
 **Show again after close**
 
@@ -62,11 +62,11 @@ Disabled State:
     
 **Text Alignment**
 
-This sets all the text to either **Left, Right or Center**
+This sets all the text to either **Left, Right or Center**.
 
 **Background Colour**
 
-This will set the colour of the Bar Background
+This will set the colour of the Bar Background.
 
 ## Close Button
 
@@ -74,11 +74,11 @@ This will set the colour of the Bar Background
 
 Disabled State:
 
-    A close button will not be visible
+    A close button will not be visible.
     
 Enabled State:
 
-    A close button will be visible and accessible
+    A close button will be visible and accessible.
     
 **Button Colour**
 
@@ -86,24 +86,24 @@ This sets the colour of the **X**
 
 **Button Background Colour**
 
-This sets the colour of the close button's background
+This sets the colour of the close button background.
 
 **Background Colour on Hover**
 
-This sets the colour when mouse hovers over the close button
+This sets the colour when mouse hovers over the close button.
 
 **Corner Radius**
 
-Setting this to 0 will make the close the button square with sharp corners
+Setting this to 0 will make the close button square with sharp corners.
 Use the slider to set the corner "roundness"
 
 **X Width**
 
-Use the slider to adjust the size of the **X**
+Use the slider to adjust the size of the **X**.
 
 **Background Width** and **Background Height**
 
-Use the sliders to adjust the size of the close button background
+Use the sliders to adjust the size of the close button background.
 
 ## Free Shipping Announcement
 
