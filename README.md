@@ -1,6 +1,8 @@
 # Announcement-Bar
 Customizable Announcement Bar for Shopify websites
 
+# Getting Started
+
 Open your Shopify Theme Code by:
 
     • Going to Online Store
@@ -31,6 +33,8 @@ Name the new Section:
 
 Remove any generated code from the file, and Save the file.
 Now copy the code from Announcement Bar Code file, paste in your announcement-bar.Liquid file, and Save.
+
+# Using the new Announcement Bar
 
 Now go to your Theme again, and click on Customize.
 If everything was done right, you should see Announcement Bar at the very top of your Theme Settings.
