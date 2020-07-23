@@ -127,4 +127,39 @@ Example:
 
 Output, eg
 
-    Spend $40.00 more to get Free Shipping.
+    Spend $10.00 more to get Free Shipping.
+    
+## Top Announcement, Bottom Announcement, Footer Announcement
+
+**Enable Free Shipping Counter**
+
+Enabled State:
+
+    This is where your Free Shipping will be displayed.
+    Type a message in the Custom HTML field.
+    
+Message example:
+
+    Free Shipping on all orders over [price]!!!
+    
+Message output:
+
+    Free Shipping on all orders over $40.00!!
+    
+Disabled State:
+
+    Your free shipping message will not appear here.
+    Any other text in Custom HTML field will still be displayed.
+    
+**Custom HTML**
+
+This is the field where you type your announcement message. Accepts HTML syntax
+
+Example:
+
+    This is our <br><strong>Announcement</strong>
+    
+Output:
+
+    This is our
+    **Announcement**
