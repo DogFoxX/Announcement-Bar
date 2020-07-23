@@ -8,8 +8,11 @@ Open your Shopify Theme Code by:
     • Choose Edit Code
 
 First Locate your Theme.Liquid file in the Layout section.
-Now in the Theme.Liquid file, look for the start of <body ...>
-And copy the following directly under <body ...>
+Now in the Theme.Liquid file, look for the start of
+
+    <body ...>
+
+And copy the following directly under it
   
     {% section "announcement-bar" %}
   
