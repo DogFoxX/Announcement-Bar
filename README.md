@@ -33,7 +33,7 @@ Name the new Section:
 
 
 Remove any generated code from the file, and Save the file.
-Now copy the code from [Announcement Bar Code file](announcement-bar.liquid), paste in your announcement-bar.Liquid file, and Save.
+Now copy the code from [Announcement Bar Code](announcement-bar.liquid) and paste it in your announcement-bar.Liquid file. Click Save.
 
 # Using the new Announcement Bar
 
@@ -59,7 +59,7 @@ Disabled State:
     When a cutomer or visitor closes the bar, it will be closed for the whole session and won't be displayed again.
     It will only be visible again when a new session is activated.
     For instance, when a visitor closes your webpage the session is closed.
-    A neew session will start when a visitor opens your website from fresh.
+    A new session will start when a visitor opens your website from fresh, and the Announcement Bar will be visible again.
     
 **Text Alignment**
 
