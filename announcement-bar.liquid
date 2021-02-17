@@ -33,7 +33,19 @@
       width: 80% !important;
       margin: 0 auto;
       text-align: center !important;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
     }
+    
+    .announce-divider-{{block.id}} {
+      width: {{ block.settings.announce_divider_mobile_width | append: '%' }} !important;
+    }
+  }
+  
+  @media screen and (min-width: 768px){
+     .hide-mobile {
+    Display: none;
+  }
   }
   
   .announce-{{block.id}} {
@@ -48,12 +60,16 @@
     text-align: right;
     {% elsif block.settings.announce_text_align == 'center' %}
     text-align: center;
+    padding-right: 45px;
+    padding-left: 45px;
     {% endif %}
     color: {{ block.settings.announce_text_color }};
     {% if block.settings.announce_text_underline %}
     text-decoration: underline;
     {% endif %}
+    {% if block.settings.announce_text_shadow %}
     text-shadow: {{ block.settings.announce_text_shadow_direction_x | append: 'px' }} {{ block.settings.announce_text_shadow_direction_y | append: 'px' }} {{ block.settings.announce_text_shadow_blur | append: 'px' }} {{ block.settings.announce_text_shadow_color }};
+    {% endif %}
   }
   
   .announce-link-{{block.id}} {
@@ -70,6 +86,15 @@
   .announce-image-{{block.id}} {
     margin: auto;
     text-align: center;
+  }
+  
+  .announce-divider-{{block.id}} {
+    width: {{ block.settings.announce_divider_width | append: '%' }};
+    margin: 0 auto;
+    border-top: {{block.settings.announce_divider_weight | append: 'px' }} {{ block.settings.announce_divider_type }} {{ block.settings.announce_divider_color }};
+    {% if block.settings.announce_divider_shadow %}
+    box-shadow: {{ block.settings.announce_divider_shadow_direction_x | append: 'px' }} {{ block.settings.announce_divider_shadow_direction_y | append: 'px' }} {{ block.settings.announce_divider_shadow_blur | append: 'px' }} {{ block.settings.announce_divider_shadow_color }};
+    {% endif %}
   }
   
   {% endfor %}
@@ -111,7 +136,6 @@
     {% assign free_qualified = section.settings.free_qualified %}
     {% assign free_shipping_threshold = section.settings.free_shipping_threshold | times: 100 | money %}
     {% assign shipping_announcement = announce_text | replace: '[price]', free_shipping_threshold %}
-
     
     {% if cart.total_price > 0 %}
     {% assign shipping_announcement = free_not_qualified %}
@@ -147,6 +171,12 @@
   </div>
   
   {% endif %}
+  
+  {% when 'divider' %}  
+  
+  <div style="padding-top: 10px; padding-bottom: 10px; margin: 0 auto">
+  <div class="announce-divider-{{block.id}}"></div>
+  </div>
   
   {% endcase %}
   {% endfor %}
@@ -310,8 +340,13 @@
 				},
 				{
 				  "type": "header",
-				  "content": "Text Shadow",
-				  "info": "Set Color to None to disable Text Shadow."
+				  "content": "Text Shadow"
+				},
+				{
+				  "type": "checkbox",
+				  "id": "announce_text_shadow",
+				  "label": "Enable Text Shadow",
+				  "default": true
 				},
 				{
 				  "type": "range",
@@ -482,9 +517,117 @@
 				  "default": "250"
 				}
 			]
+		},
+
+{
+  "type": "divider",
+  "name": "Divider",
+  "settings": [
+				{
+				  "type": "select",
+				  "id": "announce_divider_type",
+				  "label": "Type",
+				  "options": [
+								{
+								  "value": "solid",
+								  "label": "Solid"
+								},
+								{
+								  "value": "dotted",
+								  "label": "Dotted"
+								},
+								{
+								  "value": "double",
+								  "label": "Double"
+								}
+							 ],
+							   "default": "solid"
+				},
+				{
+				  "type": "range",
+				  "id": "announce_divider_width",
+				  "label": "Width",
+				  "unit": "%",
+				  "step": 10,
+				  "min": 10,
+				  "max": 100,
+				  "default": 80
+				},
+				{
+				  "type": "range",
+				  "id": "announce_divider_mobile_width",
+				  "label": "Mobile Width",
+				  "unit": "%",
+				  "step": 10,
+				  "min": 10,
+				  "max": 100,
+				  "default": 80
+				},
+				{
+				  "type": "range",
+				  "id": "announce_divider_weight",
+				  "label": "Weight",
+				  "unit": "px",
+				  "step": 1,
+				  "min": 1,
+				  "max": 5,
+				  "default": 3
+				},
+				{
+				  "type": "color",
+				  "id": "announce_divider_color",
+				  "label": "Color",
+				  "default": "#ffffff"
+				},
+				{
+				  "type": "header",
+				  "content": "Shadow"
+				},
+				{
+				  "type": "checkbox",
+				  "id": "announce_divider_shadow",
+				  "label": "Enable Shadow",
+				  "default": true
+				},
+				{
+				  "type": "range",
+				  "id": "announce_divider_shadow_direction_x",
+				  "label": "Direction X",
+				  "min": -20,
+				  "max": 20,
+				  "step": 1,
+				  "unit": "px",
+				  "default": 2
+				},
+				{
+				  "type": "range",
+				  "id": "announce_divider_shadow_direction_y",
+				  "label": "Direction Y",
+				  "min": -20,
+				  "max": 20,
+				  "step": 1,
+				  "unit": "px",
+				  "default": 2
+				},
+				{
+				  "type": "range",
+				  "id": "announce_divider_shadow_blur",
+				  "label": "Blur",
+				  "min": 0,
+				  "max": 20,
+				  "step": 1,
+				  "unit": "px",
+				  "default": 4
+				},
+				{
+				  "type": "color",
+				  "id": "announce_divider_shadow_color",
+				  "label": "Color",
+				  "default": "#000000"
+				}
+			]
 		}
 	]		
 }
-
 
 {% endschema %}
