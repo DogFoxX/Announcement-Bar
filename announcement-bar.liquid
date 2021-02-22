@@ -1,7 +1,6 @@
 <style>
   
   {% for block in section.blocks %}
-
   @media screen and (max-width: 789px) {
     .header-position {
       position: fixed;
@@ -16,6 +15,7 @@
   }
   
   .announcement-bar {
+    margin: 0 auto;
     {% if section.settings.enable_gradient == true %}
     background-image: linear-gradient({{ section.settings.gradient_direction }}, {{ section.settings.color_1 }}, {{ section.settings.color_2 }});
     {% else %}
@@ -49,6 +49,8 @@
   }
   
   .announce-{{block.id}} {
+    padding-top: {{ block.settings.announce_text_padding_top | append: 'px' }};
+    padding-bottom: {{ block.settings.announce_text_padding_bottom | append: 'px' }};
     font-family: {{ announce_font.family }},{{ announce_font.fallback_families }};
     font-size: {{ block.settings.announce_text_size | append: 'px'}};
     font-weight: {{ block.settings.announce_text_weight }};
@@ -174,7 +176,7 @@
   
   {% when 'divider' %}  
   
-  <div style="padding-top: 10px; padding-bottom: 10px; margin: 0 auto">
+  <div style="padding-top: {{ block.settings.announce_divider_padding_top | append: 'px' }};padding-bottom: {{ block.settings.announce_divider_padding_bottom | append: 'px' }};; margin: 0 auto">
   <div class="announce-divider-{{block.id}}"></div>
   </div>
   
@@ -451,6 +453,26 @@
 				  "default": 200
 				},
 				{
+				  "type": "range",
+				  "id": "announce_text_padding_top",
+				  "label": "Padding Top",
+				  "min": 0,
+				  "max": 50,
+				  "step": 1,
+				  "unit": "px",
+				  "default": 4
+				},
+				{
+				  "type": "range",
+				  "id": "announce_text_padding_bottom",
+				  "label": "Padding Bottom",
+				  "min": 0,
+				  "max": 50,
+				  "step": 1,
+				  "unit": "px",
+				  "default": 4
+				},
+				{
 				  "type": "header",
 				  "content": "Link Settings"
 				},
@@ -618,6 +640,30 @@
 				  "id": "announce_divider_shadow_color",
 				  "label": "Color",
 				  "default": "#000000"
+				},
+				{
+				  "type": "header",
+				  "content": "Padding"
+				},
+				{
+				  "type": "range",
+				  "id": "announce_divider_padding_top",
+				  "label": "Padding Top",
+				  "min": 0,
+				  "max": 50,
+				  "step": 1,
+				  "unit": "px",
+				  "default": 10
+				},
+				{
+				  "type": "range",
+				  "id": "announce_divider_padding_bottom",
+				  "label": "Padding Bottom",
+				  "min": 0,
+				  "max": 50,
+				  "step": 1,
+				  "unit": "px",
+				  "default": 10
 				}
 			]
 		}
